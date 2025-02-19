@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cct0gk4bsc13"]
+
+[ext_resource type="Texture2D" uid="uid://bqq4olp3s4qyv" path="res://Art/Level/Floor.png" id="1_2t602"]
+[ext_resource type="Texture2D" uid="uid://dpoufdb82r27c" path="res://Art/Level/base_floor.png" id="2_du8jh"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Floor" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(581, 312)
+texture = ExtResource("1_2t602")
+
+[node name="BaseFloor" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(580, 302)
+texture = ExtResource("2_du8jh")
+
+[node name="CollisionParent" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CollisionParent"]
+polygon = PackedVector2Array(397, 339, 397, 336, 334, 335, 334, 278, 419, 278, 419, 336, 412, 336, 412, 339, 419, 339, 420, 339, 420, 278, 420, 275, 334, 275, 327, 275, 327, 339, 327, 486, 409, 568, 753, 568, 834, 486, 834, 277, 828, 277, 828, 337, 743, 337, 743, 339, 828, 339, 828, 484, 750, 562, 411, 562, 334, 485, 334, 339)
